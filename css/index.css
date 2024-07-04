@@ -1,0 +1,99 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    background: url(../img/index.png) no-repeat left top/cover ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 12px;
+    color: #dde4e1;
+}
+.container {
+    position: relative;
+     width:     300px;
+     height: 360px;
+     padding: 20px 20px 10px 20px ;
+     /* background: red; */
+     border-radius: 15px;
+    background-image: linear-gradient(
+        transparent,
+        rgba(0,0,0,.8)
+    );
+    overflow: hidden;
+    inset: 4px;
+}
+.container h2 {
+    height: 66px;
+    line-height: 60px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+    color: #14d578;
+}
+.container .inputbox {
+
+    width: 300px;
+    margin-bottom: 10px ;
+    border-bottom: 1px solid #999;
+}
+.container .inputbox input {
+    /* position: absolute; */
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    padding: 20px 10px 10px ;
+    font-size: 12px;
+    color: #c6f5df;
+}
+input::placeholder {
+    color: #dde4e1;
+}
+a {
+    text-decoration: none;
+    
+}
+a:hover     {
+    text-decoration: none;
+    color: #fff;
+}
+.sign {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: all .6s;
+    letter-spacing: 12px;
+    font-size: 15px;
+}
+.sign:active {
+    scale: 0.9;
+}
+.register {
+    margin-top: 10px;
+    text-align: center;
+}
+.side {
+    position: absolute;
+    left: -150px;
+    bottom: -150px;
+    width: 300px;
+    height: 300px;
+    background-color: skyblue;
+    transform-origin: right top ;
+    transition: all 5s;
+    animation: ani  5s infinite linear;
+    z-index: -1;
+}
+@keyframes ani {
+    0% {
+       transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
